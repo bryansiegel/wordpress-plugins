@@ -34,20 +34,20 @@
 			$supports = apply_filters('gdlr_core_custom_post_support', array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields'), 'course');
 
 			$labels = array(
-				'name'               => esc_html__('Course', 'goodlayers-core-course'),
-				'singular_name'      => esc_html__('Course', 'goodlayers-core-course'),
-				'menu_name'          => esc_html__('Course', 'goodlayers-core-course'),
-				'name_admin_bar'     => esc_html__('Course', 'goodlayers-core-course'),
+				'name'               => esc_html__('Schools', 'goodlayers-core-course'),
+				'singular_name'      => esc_html__('School', 'goodlayers-core-course'),
+				'menu_name'          => esc_html__('Schools', 'goodlayers-core-course'),
+				'name_admin_bar'     => esc_html__('School', 'goodlayers-core-course'),
 				'add_new'            => esc_html__('Add New', 'goodlayers-core-course'),
-				'add_new_item'       => esc_html__('Add New Course', 'goodlayers-core-course'),
-				'new_item'           => esc_html__('New Course', 'goodlayers-core-course'),
-				'edit_item'          => esc_html__('Edit Course', 'goodlayers-core-course'),
-				'view_item'          => esc_html__('View Course', 'goodlayers-core-course'),
-				'all_items'          => esc_html__('All Course', 'goodlayers-core-course'),
-				'search_items'       => esc_html__('Search Course', 'goodlayers-core-course'),
-				'parent_item_colon'  => esc_html__('Parent Course:', 'goodlayers-core-course'),
-				'not_found'          => esc_html__('No course found.', 'goodlayers-core-course'),
-				'not_found_in_trash' => esc_html__('No course found in Trash.', 'goodlayers-core-course')
+				'add_new_item'       => esc_html__('Add New School', 'goodlayers-core-course'),
+				'new_item'           => esc_html__('New School', 'goodlayers-core-course'),
+				'edit_item'          => esc_html__('Edit School', 'goodlayers-core-course'),
+				'view_item'          => esc_html__('View School', 'goodlayers-core-course'),
+				'all_items'          => esc_html__('All Schools', 'goodlayers-core-course'),
+				'search_items'       => esc_html__('Search School', 'goodlayers-core-course'),
+				'parent_item_colon'  => esc_html__('Parent School:', 'goodlayers-core-course'),
+				'not_found'          => esc_html__('No School found.', 'goodlayers-core-course'),
+				'not_found_in_trash' => esc_html__('No School found in Trash.', 'goodlayers-core-course')
 			);
 			$args = array(
 				'labels'             => $labels,
@@ -81,7 +81,7 @@
 			$slug = apply_filters('gdlr_core_custom_post_slug', 'course_category', 'course_category');
 			$args = array(
 				'hierarchical'      => true,
-				'label'             => esc_html__('Course Category', 'goodlayers-core-course'),
+				'label'             => esc_html__('School Category', 'goodlayers-core-course'),
 				'show_ui'           => true,
 				'show_admin_column' => true,
 				'query_var'         => true,
@@ -197,7 +197,7 @@
 							'title' => esc_html__('General', 'goodlayers-core-course'),
 							'options' => array(
 								'course-id' => array(
-									'title' => esc_html__('Course ID', 'goodlayers-core-course'),
+									'title' => esc_html__('School ID', 'goodlayers-core-course'),
 									'type' => 'text',
 									'single' => 'goodlayers-core-course-id'
 								),

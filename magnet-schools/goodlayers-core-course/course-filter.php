@@ -187,6 +187,7 @@
 
 			$custom_taxs = get_option('goodlayers_core_course_custom_taxs', array());
 			foreach( $custom_taxs as $custom_tax_slug => $custom_tax ){
+				
 				$ret[$custom_tax_slug] = $custom_tax['label'];
 			}
 

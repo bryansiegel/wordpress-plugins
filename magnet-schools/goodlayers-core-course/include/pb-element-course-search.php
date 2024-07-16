@@ -143,6 +143,7 @@
 
 				// start printing item
 				$ret  = '<div class="gdlr-core-course-search-item gdlr-core-item-pdb gdlr-core-item-pdlr" ';
+
 				if( !empty($settings['padding-bottom']) && $settings['padding-bottom'] != $gdlr_core_item_pdb ){
 					$ret .= gdlr_core_esc_style(array('padding-bottom'=>$settings['padding-bottom']));
 				}
@@ -182,31 +183,96 @@
 					}
 					$ret .= '<' . $form_tag . ' class="gdlr-core-course-form clearfix" action="' . esc_url($action_url) . '" method="GET" >';
 					if( array_search('keywords', $settings['search-fields']) === false ){
+
 						$ret .= '<input type="hidden" name="course-keywords" value="" />';
 					}
 
-					$count = 0;
-					foreach( $settings['search-fields'] as $search_field ){ $count++;
+					$count = 0; ?>
+<!-- 					<div class="gdlr-core-course-search-item gdlr-core-item-pdb gdlr-core-item-pdlr">
+    <div class="gdlr-core-search-frame" style="background-color:#1f2d4a;">
+        <h3 class="gdlr-core-course-search-item-title " style="color: #ffffff ;">Search For Magnet Schools</h3>
+        <form class="gdlr-core-course-form clearfix" action="https://magnetschoolsdreampress.stage.site/find-a-magnet-school/" method="GET">
+            <div class=" gdlr-core-course-column gdlr-core-column-1 gdlr-core-column-first">
+                <div class="gdlr-core-course-search-field gdlr-core-course-field-keywords"><input type="text" placeholder="Keywords" name="course-keywords" value=""></div>
+            </div>
+            <div class=" gdlr-core-course-column gdlr-core-column-1">
+                <div class="gdlr-core-course-search-field gdlr-core-course-field-course-id">
+                    <div class="gdlr-core-course-form-combobox gdlr-core-skin-e-background"><select class="gdlr-core-skin-e-content" name="grade-level">
+                            <option value="">Grade Level</option>
+                            <option value="elementary">Elementary</option>
+                            <option value="Middle">Middle School</option>
+                            <option value="High">High School</option>
+                        </select></div>
+                </div>
+            </div>
+            <div class=" gdlr-core-course-column gdlr-core-column-1">
+                <div class="gdlr-core-course-search-field gdlr-core-course-field-course-id">
+                    <div class="gdlr-core-course-form-combobox gdlr-core-skin-e-background"><select class="gdlr-core-skin-e-content" name="implementation">
+                            <option value="">Implementation</option>
+                            <option value="full-school-k-5">FULL School K-5</option>
+                        </select></div>
+                </div>
+            </div>
+            <div class=" gdlr-core-course-column gdlr-core-column-1">
+                <div class="gdlr-core-course-search-field gdlr-core-course-field-course-id">
+                    <div class="gdlr-core-course-form-combobox gdlr-core-skin-e-background"><select class="gdlr-core-skin-e-content" name="program">
+                            <option value="">Program</option>
+                            <option value="steam">STEAM</option>
+                        </select></div>
+                </div>
+            </div>
+                 <div class="gdlr-core-course-form-submit gdlr-core-course-column gdlr-core-column-first gdlr-core-center-align"><input class="gdlr-core-full-size" type="submit" value="Search For CCSD Magnet Schools"></div>
+        </form>
+    </div>
+</div> -->
+
+
+					<?php
+					/*Ignore this stuff*/
+					// var_dump($settings['search-fields']);
+
+					// $searching = array("Grade Level", "Implementation")
+
+					// foreach( $searching[] as $search_field ){ 
+
+					foreach( $settings['search-fields'] as $search_field ){ 
+						$count++;
+						// var_dump($search_field);
+
+
 						$column_class  = ' gdlr-core-course-column';
 						$column_class .= ' gdlr-core-column-' . $column_size;
 						$column_class .= ($count % $column_number == 1)? ' gdlr-core-column-first': '';
 
-						$ret .= '<div class="' . esc_attr($column_class)  .'" >';
-						$ret .= '<div class="gdlr-core-course-search-field gdlr-core-course-field-' . esc_attr($search_field) . '" >';
 
+						$ret .= '<div class="' . esc_attr($column_class)  .'" >';
+
+						$ret .= '<div class="gdlr-core-course-search-field gdlr-core-course-field-' . esc_attr($search_field) . '" >';
+					
+
+
+	
 						switch( $search_field ){
 							case 'keywords':
 								$ret .= '<input type="text" placeholder="' . esc_html__('Keywords', 'goodlayers-core-course') . '" name="course-keywords" value="" />';
 								break;
-							case 'course-id': 
-								$ret .= '<input type="text" placeholder="' . esc_html__('Course ID', 'goodlayers-core-course') . '" name="course-id" value="" />';
-								break;
 							default :
+
+
+							// $terms = array("Grade Level", "Implementation");
 								$terms = gdlr_core_get_term_list($search_field);
+								// var_dump($terms);
 
 								$ret .= '<div class="gdlr-core-course-form-combobox gdlr-core-skin-e-background" >';
+								//custom selects Go Here
+
 								$ret .= '<select class="gdlr-core-skin-e-content" name="' . esc_attr($search_field) . '" >';
+
+								// var_dump($tax_list);
+								// var_dump($search_field);
+								
 								$ret .= '<option value="" >' . $tax_list[$search_field] . '</option>';
+
 								foreach( $terms as $term_slug => $term_name ){
 									$ret .= '<option value="' . esc_attr($term_slug) . '" >' . $term_name . '</option>';
 								}
@@ -219,7 +285,7 @@
 					}
 					
 					$ret .= '<div class="gdlr-core-course-form-submit gdlr-core-course-column gdlr-core-column-first gdlr-core-center-align" >';
-					$ret .= '<input class="' . ((empty($settings['full-size-button']) || $settings['full-size-button'] == 'enable')? 'gdlr-core-full-size': 'gdlr-core-auto-size') . '" type="submit" value="' . esc_html__('Search For CCSD Magnet Schools', 'goodlayers-core-course') . '" />';
+					$ret .= '<input class="' . ((empty($settings['full-size-button']) || $settings['full-size-button'] == 'enable')? 'gdlr-core-full-size': 'gdlr-core-auto-size') . '" type="submit" value="' . esc_html__('Search', 'goodlayers-core-course') . '" />';
 					$ret .= '</div>';
 					$ret .= '</' . $form_tag . '>';
 
