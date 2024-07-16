@@ -216,7 +216,7 @@
             <div class=" gdlr-core-course-column gdlr-core-column-1">
                 <div class="gdlr-core-course-search-field gdlr-core-course-field-course-id">
                     <div class="gdlr-core-course-form-combobox gdlr-core-skin-e-background"><select class="gdlr-core-skin-e-content" name="program">
-                            <option value="">Program</option>
+                            <option value="">Program</optio>n
                             <option value="steam">STEAM</option>
                         </select></div>
                 </div>
@@ -228,12 +228,6 @@
 
 
 					<?php
-					/*Ignore this stuff*/
-					// var_dump($settings['search-fields']);
-
-					// $searching = array("Grade Level", "Implementation")
-
-					// foreach( $searching[] as $search_field ){ 
 
 					foreach( $settings['search-fields'] as $search_field ){ 
 						$count++;
@@ -245,7 +239,7 @@
 						$column_class .= ($count % $column_number == 1)? ' gdlr-core-column-first': '';
 
 
-						$ret .= '<div class="' . esc_attr($column_class)  .'" >';
+						$ret .= '<div class="' . esc_attr($column_class)  .'">';
 
 						$ret .= '<div class="gdlr-core-course-search-field gdlr-core-course-field-' . esc_attr($search_field) . '" >';
 					
