@@ -351,7 +351,7 @@
 								'background-color' => empty($settings['course-list-item-bg'])? '': $settings['course-list-item-bg']
 							)) . ' >';
 
-							$ret .= '<div style="float:left;min-height:280px;">
+							$ret .= '<div style="float:left;min-height:320px;">
 							<img src="' . get_the_post_thumbnail_url() . '" width="200" style="margin-right:15px;"/>
 							</div>';
 							

@@ -268,6 +268,7 @@
 								$ret .= '<option value="" >' . $tax_list[$search_field] . '</option>';
 
 								foreach( $terms as $term_slug => $term_name ){
+									// var_dump($term_name);
 									$ret .= '<option value="' . esc_attr($term_slug) . '" >' . $term_name . '</option>';
 								}
 								$ret .= '</select>';

@@ -145,7 +145,6 @@
 								}
 							}
 							
-
 							$ret .= '<div class="gdlr-core-head" >' . $taxs[$tax_slug] . '</div>';
 							$ret .= '<div class="gdlr-core-tail" >' . gdlr_core_text_filter($term_name) . '</div>';
 						}
