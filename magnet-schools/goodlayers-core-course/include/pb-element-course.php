@@ -304,12 +304,15 @@
 				$ret .= gdlr_core_block_item_title($title_settings);
 
 				$query = self::query_course($settings);
+
+
 				$settings['paged'] = empty($query->query['paged'])? 1: $query->query['paged'];
 
 				$column = 0;
 				$column_size = (empty($settings['column-size'])? '60': $settings['column-size']);
 
 				gdlr_core_setup_admin_postdata();
+
 				if( $query->have_posts() ){
 					while($query->have_posts()){ $query->the_post();
 
@@ -568,7 +571,7 @@
 
 				if( !empty($settings['query']) ){ return $settings['query']; }
 
-				$args = array('post_type' => 'course', 'post_status' => 'publish', 'suppress_filters' => false);
+				$args = array('post_type' => 'course', 'order' => 'ASC', 'orderby' => 'title', 'post_status' => 'publish', 'suppress_filters' => false);
 				
 				if( !empty($settings['keywords']) ){
 					$args['s'] = $settings['keywords'];
@@ -609,8 +612,8 @@
 				}
 
 				// order
-				$args['order'] = empty($settings['order'])? 'desc': $settings['order'];
-				$args['orderby'] = empty($settings['orderby'])? 'date': $settings['orderby'];
+				// $args['order'] = empty($settings['order'])? 'asc': $settings['order'];
+				// $args['orderby'] = empty($settings['orderby'])? 'title': $settings['orderby'];
 				
 				$args['posts_per_page'] = empty($settings['num-fetch'])? 9: $settings['num-fetch'];
 
