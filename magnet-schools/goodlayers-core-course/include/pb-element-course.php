@@ -354,7 +354,7 @@
 								'background-color' => empty($settings['course-list-item-bg'])? '': $settings['course-list-item-bg']
 							)) . ' >';
 
-							$ret .= '<div style="float:left;min-height:320px;">
+							$ret .= '<div class="school-image">
 							<img src="' . get_the_post_thumbnail_url() . '" width="200" style="margin-right:15px;"/>
 							</div>';
 							
