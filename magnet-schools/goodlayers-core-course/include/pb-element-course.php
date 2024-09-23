@@ -371,139 +371,142 @@
 							//manual url
 							switch (get_the_title()) {
 								case 'Walter Bracken STEAM Academy':
-								$ret .= '<a href="https://brackensteamacademy.com/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://brackensteamacademy.com/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 									break;
 								case 'Roger D. Gehring Academy of Science and Technology':
-								$ret .= '<a href="https://www.gehringes.com/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.gehringes.com/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Gilbert Academy of Creative Arts':
-								$ret .= '<a href="https://www.gilbertacademy.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.gilbertacademy.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Lomie G. Heard Technology Academy':
-								$ret .= '<a href="https://www.lomieheardmagnet.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.lomieheardmagnet.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Mabel Hoggard Math and Science Magnet School':
-								$ret .= '<a href="https://www.mabelhoggard.net/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.mabelhoggard.net/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Gordon McCaw STEAM Academy':
-								$ret .= '<a href="https://sites.google.com/nv.ccsd.net/mccawes" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://sites.google.com/nv.ccsd.net/mccawes" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Sandy Searles Miller Academy for International Studies':
-								$ret .= '<a href="https://www.sandymilleracademy.com/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.sandymilleracademy.com/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Clarence A. Piggott Academy of International Studies':
-								$ret .= '<a href="https://www.clarencepiggott.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.clarencepiggott.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Sheila Tarr Academy of International Studies':
-								$ret .= '<a href="https://www.sheilatarr.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.sheilatarr.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Helen Anderson Toland International Academy':
-								$ret .= '<a href="https://sites.google.com/nv.ccsd.net/helen-anderson-toland-es" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://sites.google.com/nv.ccsd.net/helen-anderson-toland-es" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Jo Mackey iLead Academy for the Digital Sciences':
-								$ret .= '<a href="https://www.jomackeymagnet.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.jomackeymagnet.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'The STEM and Medical Academy at Jim Bridger Middle School':
-								$ret .= '<a href="https://www.bridgerms.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.bridgerms.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
-								case 'Brown Academy of International Studies':
-								$ret .= '<a href="https://www.brownjhs.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								case 'B. Mahlon Brown Academy of International Studies':
+								$ret .= '<a href="https://www.brownjhs.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
-								case 'Lyal Burkholder Middle School':
-								$ret .= '<a href="https://www.burkholderms.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								case 'Lyal Burkholder Academy of Environmental Science':
+								$ret .= '<a href="https://www.burkholderms.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Cashman Middle School, Academy of Mathematics, Science and Engineering':
-								$ret .= '<a href="https://www.cashmanms.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.cashmanms.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Fremont Professional Development Middle School, Academy of Medical Sciences':
-								$ret .= '<a href="https://www.fremontpdms.net/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.fremontpdms.net/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Robert O. Gibson Leadership Academy':
-								$ret .= '<a href="https://rogibson.net/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://rogibson.net/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Kenny C. Guinn STEM Academy':
-								$ret .= '<a href="https://guinntitans.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://guinntitans.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Hyde Park Academy of Science and Mathematics':
-								$ret .= '<a href="https://www.hydeparkms.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.hydeparkms.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Walter Johnson Junior High School Academy of International Studies':
-								$ret .= '<a href="https://www.johnsonjhs.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.johnsonjhs.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
-								case 'Carroll M. Johnston Middle School':
-								$ret .= '<a href="https://www.johnstonbulldogs.com/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								case 'Carroll M. Johnston STEM Academy of Environmental Studies':
+								$ret .= '<a href="https://www.johnstonbulldogs.com/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'KO Knudson Academy of the Arts':
-								$ret .= '<a href="https://www.knudsonms.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.knudsonms.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Lied STEM Academy':
-								$ret .= '<a href="https://liedstemacademy.tech/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://liedstemacademy.tech/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Roy W. Martin Middle School and International Baccalaureate Middle Years Programme':
-								$ret .= '<a href="https://www.roymartinms.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.roymartinms.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Mike O’Callaghan i3 Learn Academy':
-								$ret .= '<a href="https://www.occomets.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.occomets.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Thurman White Academy of the Performing Arts':
-								$ret .= '<a href="https://www.thurmanwhitems.com/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank" style="margin-bottom:100px">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://tinyurl.com/TWAMagnet" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank" style="margin-bottom:100px">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Thurman White Academy of the Performing Arts':
-								$ret .= '<a href="https://www.thurmanwhitems.com/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank" style="margin-bottom:100px">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.thurmanwhitems.com/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank" style="margin-bottom:100px">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Advanced Technologies Academy':
-								$ret .= '<a href="https://atech.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://atech.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Basic Academy of International Studies':
-								$ret .= '<a href="https://www.basicacademy.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.basicacademy.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Canyon Springs High School Leadership and Law Preparatory Academy':
-								$ret .= '<a href="https://www.canyonspringshighschool.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.canyonspringshighschool.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Ed W. Clark High School':
-								$ret .= '<a href="https://www.clarkchargers.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.clarkchargers.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Del Sol Academy of The Performing Arts':
-								$ret .= '<a href="https://www.delsolacademy.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.delsolacademy.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Desert Pines Magnet Academy':
-								$ret .= '<a href="https://www.desertpineshs.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.desertpineshs.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'East Career and Technical Academy':
-								$ret .= '<a href="https://www.easttechtitans.com/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.easttechtitans.com/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Eldorado High School':
-								$ret .= '<a href="https://www.eldoradohs.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.eldoradohs.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Las Vegas Academy of the Arts':
-								$ret .= '<a href="https://www.lasvegasacademy.net/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.lasvegasacademy.net/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Northeast Career and Technical Academy':
-								$ret .= '<a href="https://www.northeastcta.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.northeastcta.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Northwest Career and Technical Academy':
-								$ret .= '<a href="https://www.nwctahawks.net/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.nwctahawks.net/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Rancho High School':
-								$ret .= '<a href="https://ranchorams.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://ranchorams.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Southeast Career and Technical Academy':
-								$ret .= '<a href="https://www.secta.us/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.secta.us/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Southwest Career and Technical Academy':
-								$ret .= '<a href="https://www.swcta.net/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.swcta.net/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
+								case 'South Career and Technical Academy':
+									$ret .= '<a href=https://southcta.net/" id="school-web-button" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+									break;
 								case 'Spring Valley High School':
-								$ret .= '<a href="https://www.springvalleyhs.com/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.springvalleyhs.com/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Valley High School':
-								$ret .= '<a href="https://www.valleyhs.vegas/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.valleyhs.vegas/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'Veterans Tribute Career and Technical Academy':
-								$ret .= '<a href="https://www.vtcta.org/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://www.vtcta.org/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								case 'West Career and Technical Academy':
-								$ret .= '<a href=https://wctawranglers.com/" class="gdlr-core-course-item-button gdlr-core-button" target="_blank" style="margin-bottom:30px">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
+								$ret .= '<a href="https://wctawranglers.com/" class="gdlr-core-course-item-button gdlr-core-button school-button" target="_blank" style="margin-bottom:30px">' . esc_html__('View School', 'goodlayers-core-course') . '</a>';
 								break;
 								default:
 									

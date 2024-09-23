@@ -45,7 +45,7 @@
 								'title' => esc_html__('Search Fields', 'goodlayers-core-course'),
 								'type' => 'multi-combobox',
 								'options' => array(
-									'keywords' => esc_html__('Keywords', 'goodlayers-core-course'),
+									'keywords' => esc_html__('School Name', 'goodlayers-core-course'),
 									'course-id' => esc_html__('Course ID', 'goodlayers-core-course'),
 									'course_category' => esc_html__('Course Category', 'goodlayers-core-course'),
 									'course_tag' => esc_html__('Course Tag', 'goodlayers-core-course')
@@ -248,7 +248,7 @@
 	
 						switch( $search_field ){
 							case 'keywords':
-								$ret .= '<input type="text" placeholder="' . esc_html__('Keywords', 'goodlayers-core-course') . '" name="course-keywords" value="" />';
+								$ret .= '<input type="text" placeholder="' . esc_html__('School Name', 'goodlayers-core-course') . '" name="course-keywords" value="" />';
 								break;
 							default :
 

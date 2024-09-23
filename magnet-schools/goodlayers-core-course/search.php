@@ -25,7 +25,7 @@ error_reporting(E_ALL);
         <h3 class="gdlr-core-course-search-item-title " style="color: #ffffff ;">Search For Magnet Schools</h3>
         <form class="gdlr-core-course-form clearfix" action="https://magnetschoolsdreampress.stage.site/find-a-magnet-school/" method="GET">
             <div class=" gdlr-core-course-column gdlr-core-column-1 gdlr-core-column-first">
-                <div class="gdlr-core-course-search-field gdlr-core-course-field-keywords"><input type="text" placeholder="Keywords" name="course-keywords" value=""></div>
+                <div class="gdlr-core-course-search-field gdlr-core-course-field-keywords"><input type="text" placeholder="School Name" name="course-keywords" value=""></div>
             </div>
             <?php foreach ($settings['search-fields'] as $search_options) : ?>
             	<?php if($search_options != "keywords") { ?>
